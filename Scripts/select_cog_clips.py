@@ -59,11 +59,12 @@ EXCLUDE_TERMS = [
 # ============================================================
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-
-DATA_DIR = PROJECT_ROOT / "data"
+DATA_ROOT_DIR = PROJECT_ROOT / "data"
+CM_DIR = PROJECT_ROOT / "CondensedMovies"
+DATA_DIR = CM_DIR / "data"
 METADATA_DIR = DATA_DIR / "metadata"
 
-OUTPUT_DIR = DATA_DIR / "selected"
+OUTPUT_DIR = DATA_ROOT_DIR / "selected"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 
